@@ -1,0 +1,132 @@
+body{
+    background-color: beige;
+    }
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************************
+         MAIN STYLE
+********************************************/
+
+html{
+    /* this sets a default font size for everything ont he site which makess styling 
+    relative to font size easy*/
+    font-size:10px; 
+     /* use a sans-serf font as a defoualt for easy reading */
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+
+.container {
+    /* you can style things relative to the browser window,using %*/
+    width:80%;
+    /* if you style things relative to the broswer window, add a maxium, sothings won't 
+    streach forever*/
+    max-width:1200px ;
+    background-color:blueviolet;
+    /* center the site in the broser window */
+    margin:0 auto;
+
+    /* styling something is a percentage of height doesnt work.. height:100 %*/
+    
+    /* if you  want to style something  relative to the height of the browser, 
+     you can use vh, or viewpower height*/
+    height: 100vh;  
+      
+     /* you can alaso use vw, or view port width- but this doesn't  see the scroll bar*/
+
+     }
+
+
+
+/* the CSS reset makes everything have no syle,so we have to put some backk*/
+h1 {
+    font-size:3.6em;
+    /*an em unit is relative to the size of the font- since ouor basline is 10px 
+    3.6 em =3.6*10= 36 px
+    (if the baseline font size was 16 px,then 3.6 =3.6*16=57.6 px)*/
+    
+    /* we can then set the space -relative to the font size of this elements ..
+    0.5em=36px*0.5 = 36 px /2 =18 px*/
+
+    margin-bottom:0.05em;
+    }
+   
+
+    h3  {
+        /* if you want to make sure an em is pointing to your baseline font size,
+        you can use rem,which standds for "root em" - and will always be relative 
+        to the font size set in your html tag*/
+        font-size:2.6em;
+         
+         /* use font -weights  to make text bold */
+         font-weight: bold;
+        }
+
+         /* set a defaout font size foor all our pargraphs, relative tothe 10 px
+          baseline set in our HTML*/    
+          
+          p {
+             font-size: 1.8rem;
+
+              /*use aline heught to tcontrol how much spach each line of  text uses*/
+             line-height: 1.7;
+                
+             /* it also helps to add additionaal space between each parpgh tag */
+             margin-bottom: 0.7em;
+
+               }
+
+
+          em  {
+            /* font style is used to make somthing italis */
+            font-style: italic;
+
+             }
