@@ -130,3 +130,43 @@ h1 {
             font-style: italic;
 
              }
+                  
+   
+     
+/********************************************
+          HEADER STYLE
+********************************************/        
+
+
+             header {
+                 height: 300px;
+                 background-color: rgb(224, 171, 39);
+ 
+
+        /* for decortive images , like a hero banner, you can add image with CSS*/
+           background-image: url(../image/bread.jpg);
+           /* the .. /tells the browser  to go out of the styler folder,then into the images
+           folder, to find the image */
+
+
+           /* you can control how the the image repeats */
+           background-repeat:no-repeat ;
+
+
+           /* you can  conntrol how the image is scaled inside the elements...*/
+        
+
+           /* backgroud- size:contaion; will scla the image unntill the whole thing is visible  
+           inside the element*/
+           background-size:cover ; /* cover will scale the image so the whole element is cpvered
+           by the image */
+
+           /* you can control how an image is positioned in the element ..*/
+           background-position:65% center ;
+           /* this takes two values :horizontal position and vertical  position*/
+
+            /*  with the shorthand background :property ,you can enter color image repaet size
+             position all in the same property backgroud :url(../image/bread.jbg) no
+             repeat cover 65% center;)*/
+
+                 }
